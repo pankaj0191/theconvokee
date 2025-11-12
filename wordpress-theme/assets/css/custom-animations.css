@@ -1,0 +1,492 @@
+/**
+ * TheConvokee Custom Animations
+ * Animation styles for Elementor widgets and custom sections
+ *
+ * @package TheConvokee
+ * @since 1.0.0
+ */
+
+/* ================================
+   KEYFRAME ANIMATIONS
+   ================================ */
+
+/* Fade In Up Animation - Hero elements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Animation - Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Infinite Scroll Animation - Carousel */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Rotate Animation - Why Believe Section */
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Pulse Animation - Badges */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Slide In From Right - Mobile Menu */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* ================================
+   ANIMATION UTILITY CLASSES
+   ================================ */
+
+/* Apply fadeInUp animation */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fade-in-up-delay-1 {
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.animate-fade-in-up-delay-2 {
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.animate-fade-in-up-delay-3 {
+    animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+/* Apply fadeIn animation */
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Apply scroll animation for carousel */
+.animate-scroll {
+    animation: scroll 30s linear infinite;
+}
+
+/* Apply rotate animation */
+.animate-rotate {
+    animation: rotate 20s linear infinite;
+}
+
+/* Apply pulse animation */
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ================================
+   3D FLIP CARD EFFECTS
+   ================================ */
+
+.flip-card-container {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-container:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* ================================
+   HOVER EFFECTS
+   ================================ */
+
+/* Button Hover - Lift Effect */
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(236, 72, 153, 0.3);
+}
+
+/* Card Hover - Scale Effect */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Link Hover - Underline Effect */
+.hover-underline {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #EC4899, #9333EA);
+    transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+/* Image Hover - Zoom Effect */
+.hover-zoom {
+    overflow: hidden;
+}
+
+.hover-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* ================================
+   SCROLL-TRIGGERED ANIMATIONS
+   ================================ */
+
+/* Elements with scroll animation */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered scroll animations */
+.scroll-animate-stagger:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.scroll-animate-stagger:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.scroll-animate-stagger:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.scroll-animate-stagger:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.scroll-animate-stagger:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.scroll-animate-stagger:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+/* ================================
+   PARALLAX EFFECTS
+   ================================ */
+
+/* Sticky parallax image */
+.parallax-sticky {
+    position: sticky;
+    top: 100px;
+    transition: transform 0.5s ease-out;
+}
+
+/* Parallax background */
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ================================
+   VIDEO BACKGROUND EFFECTS
+   ================================ */
+
+.video-background-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background-wrapper video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* Video overlay gradient */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(147, 51, 234, 0.95) 0%, rgba(147, 51, 234, 0.85) 40%, rgba(236, 72, 153, 0.7) 100%);
+    z-index: 1;
+}
+
+/* ================================
+   GRADIENT BACKGROUNDS
+   ================================ */
+
+.gradient-purple-pink {
+    background: linear-gradient(135deg, #9333EA, #EC4899);
+}
+
+.gradient-purple-pink-soft {
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(236, 72, 153, 0.2));
+}
+
+.gradient-dark {
+    background: linear-gradient(135deg, #1E0A3C, #0F0521);
+}
+
+/* Text gradient */
+.text-gradient-purple-pink {
+    background: linear-gradient(135deg, #EC4899, #9333EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-light {
+    background: linear-gradient(to right bottom, #f8d7ff, #fb9cff, #f8d7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ================================
+   BACKDROP BLUR EFFECTS
+   ================================ */
+
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.backdrop-blur-strong {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* ================================
+   LOADING STATES
+   ================================ */
+
+.loading-spinner {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #EC4899;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ================================
+   SMOOTH TRANSITIONS
+   ================================ */
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+
+.transition-opacity {
+    transition: opacity 0.3s ease;
+}
+
+.transition-colors {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* ================================
+   RESPONSIVE ANIMATIONS
+   ================================ */
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    /* Reduce animation complexity on mobile */
+    .flip-card-container {
+        perspective: 800px;
+    }
+
+    .flip-card-inner {
+        transition: transform 0.4s;
+    }
+
+    /* Disable parallax on mobile */
+    .parallax-bg {
+        background-attachment: scroll;
+    }
+
+    .parallax-sticky {
+        position: relative;
+        top: auto;
+    }
+}
+
+/* ================================
+   ELEMENTOR SPECIFIC CLASSES
+   ================================ */
+
+/* Hero section with video background */
+.elementor-hero-video {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Service cards grid */
+.elementor-service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+@media (max-width: 992px) {
+    .elementor-service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .elementor-service-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Carousel infinite scroll */
+.elementor-carousel-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    gap: 0;
+}
+
+.elementor-carousel-track:hover {
+    animation-play-state: paused;
+}
+
+/* Rotating background effect */
+.elementor-rotating-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.elementor-rotating-bg::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+    animation: rotate 20s linear infinite;
+    pointer-events: none;
+}
+
+/* Brand logos hover effect */
+.elementor-brand-logo {
+    transition: all 0.3s ease;
+}
+
+.elementor-brand-logo:hover {
+    transform: scale(1.1);
+}
