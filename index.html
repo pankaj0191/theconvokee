@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>TheConvokee | We Help Creativity Meet Capital - Creator Investments & Brand Building</title>
+    <meta name="description" content="TheConvokee empowers creators and startups with smart capital, strategic guidance, and growth marketing. We help creativity meet capital through creator investments, brand building, and go-to-market strategies.">
+    <meta name="keywords" content="creator investments, brand building, startup funding, influencer marketing, growth marketing, go-to-market strategy, content creators, creative capital, TheConvokee">
+    <meta name="author" content="TheConvokee">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TheConvokee | We Help Creativity Meet Capital">
+    <meta property="og:description" content="TheConvokee empowers creators and startups with smart capital, strategic guidance, and growth marketing. We help creativity meet capital.">
+    <meta property="og:url" content="https://theconvokee.com">
+    <meta property="og:site_name" content="TheConvokee">
+    <meta property="og:image" content="https://theconvokee.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TheConvokee - We Help Creativity Meet Capital">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@theconvokee">
+    <meta name="twitter:creator" content="@theconvokee">
+    <meta name="twitter:title" content="TheConvokee | We Help Creativity Meet Capital">
+    <meta name="twitter:description" content="TheConvokee empowers creators and startups with smart capital, strategic guidance, and growth marketing. We help creativity meet capital.">
+    <meta name="twitter:image" content="https://theconvokee.com/twitter-card.jpg">
+    <meta name="twitter:image:alt" content="TheConvokee - We Help Creativity Meet Capital">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#9333EA">
+    <meta name="msapplication-TileColor" content="#9333EA">
+    <meta name="application-name" content="TheConvokee">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="TheConvokee">
+    <link rel="canonical" href="https://theconvokee.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TheConvokee",
+        "description": "We help creativity meet capital through creator investments, brand building, and strategic guidance.",
+        "url": "https://theconvokee.com",
+        "logo": "https://theconvokee.com/logo.png",
+        "sameAs": [
+            "https://twitter.com/theconvokee",
+            "https://linkedin.com/company/theconvokee"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Business",
+            "email": "contact@theconvokee.com"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            The Convoke
+            <div class="burger-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <a href="#services" class="nav-link" onclick="closeMobileMenu()">Services</a>
+            <a href="#brands" class="nav-link" onclick="closeMobileMenu()">Brands</a>
+            <a href="#portfolio" class="nav-link" onclick="closeMobileMenu()">Portfolio</a>
+            <a href="#about" class="nav-link" onclick="closeMobileMenu()">About</a>
+            <button class="nav-button mobile-contact" onclick="openModal(); closeMobileMenu()">Contact Us</button>
+        </div>
+        <button class="nav-button desktop-contact" onclick="openModal()">Contact Us</button>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="Videos/hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-content">
+            <div class="hero-content-wrapper">
+                <h1>We Help Creativity Meet Capital<br> <span class="highlight-text">The Convoke</span></h1>
+                <p class="hero-subtitle">We Nurture Creative Dreams - Financially And Strategically</p>
+                <button class="cta-button" onclick="openModal()">Let's Connect</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overlapping Service Cards -->
+    <section class="services-section" id="services">
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="service-card card-1">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Creator<br>Investments</h3>
+                            <p class="card-subtitle">Direct funding models</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Creator Investments</h3>
+                        <p>Direct funding and revenue-sharing models to help creators scale. We invest in and empower content creators to scale their brand and income.</p>
+                        <button class="learn-more" onclick="openModal()">Let's Connect</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="service-card card-2">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Brand<br>Building</h3>
+                            <p class="card-subtitle">Long-term monetization</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Brand Building</h3>
+                        <p>Transforming creators into long-term, monetizable brands. We help build sustainable creative businesses.</p>
+                        <button class="learn-more" onclick="openModal()">Let's Connect</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="service-card card-3">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Market<br>Insights</h3>
+                            <p class="card-subtitle">Data-backed analysis</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Market Insights</h3>
+                        <p>Data-backed audience analysis and trend forecasting. We provide strategic insights to guide your growth.</p>
+                        <button class="learn-more" onclick="openModal()">Let's Connect</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="service-card card-4">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Startup<br>Investments</h3>
+                            <p class="card-subtitle">Seed funding & strategy</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Startup Investments</h3>
+                        <p>Seed and early-stage funding backed by strategic guidance. We fuel startups with smart capital.</p>
+                        <button class="learn-more" onclick="openModal()">Let's Connect</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="service-card card-5">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Go-to-Market<br>Strategy</h3>
+                            <p class="card-subtitle">Launch & positioning</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Go-to-Market Strategy</h3>
+                        <p>Clear roadmaps for launch, positioning, and expansion. Campaign planning and execution expertise.</p>
+                        <button class="learn-more" onclick="openModal()">Let's Connect</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="service-card card-6">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Growth<br>Marketing</h3>
+                            <p class="card-subtitle">Digital optimization</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Growth Marketing</h3>
+                        <p>Digital campaigns, brand storytelling, and sales funnel optimization to drive measurable results.</p>
+                        <button class="learn-more" onclick="openModal()">Let's Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section - WHITE BACKGROUND -->
+    <section class="brands-section" id="brands">
+        <div class="brands-header">
+            <p class="brands-title">Trusted By</p>
+            <h2 class="brands-subtitle">Leading Brands and Agencies</h2>
+            <p class="brands-year">Since 2013</p>
+        </div>
+        <div class="brands-logos">
+             <span class="brand-logo disney"><img src="images/Logos/1.png"></span>
+            <span class="brand-logo amazon"><img src="images/Logos/2.png"></span>
+            <span class="brand-logo kelloggs"><img src="images/Logos/3.png"></span>
+            <span class="brand-logo walmart"><img src="images/Logos/4.png"></span>
+            <span class="brand-logo nike"><img src="images/Logos/5.png"></span>
+            <span class="brand-logo microsoft"><img src="images/Logos/6.png"></span>
+        </div>
+    </section>
+
+    <!-- Marketing Section with Parallax -->
+    <section class="marketing-section">
+        <div class="marketing-container">
+            <div class="marketing-header">
+                <p class="marketing-label">Marketing's Imperative</p>
+                <h2 class="marketing-title">Make Creator Strategy a<br>Marketing Pillar</h2>
+                <p class="marketing-description">Influencer marketing is no longer a test—it's a strategic necessity.</p>
+            </div>
+
+            <div class="marketing-content">
+                <div class="marketing-image-wrapper">
+                    <div class="marketing-image" id="parallaxImage"></div>
+                </div>
+                <div class="marketing-points">
+                    <div class="marketing-point">
+                        <h3>End-to-End Support</h3>
+                        <p>From investment to execution — we help startups and creators at every stage of growth.</p>
+                    </div>
+                    <div class="marketing-point">
+                        <h3>Smart Capital</h3>
+                        <p> We invest strategically, combining funding with expert guidance and measurable growth outcomes.</p>
+                    </div>
+                    <div class="marketing-point">
+                        <h3>Data-Driven Decisions</h3>
+                        <p>Every strategy is backed by in-depth market research, ensuring clarity and confidence.</p>
+                    </div>
+                     <div class="marketing-point">
+                        <h3>Faster Go-to-Market</h3>
+                        <p> Our go-to-market strategies help brands launch, position, and scale effectively.</p>
+                    </div>
+                     <div class="marketing-point">
+                        <h3>Tailored Growth Plans</h3>
+                        <p>We customize solutions to fit your unique goals — whether you’re a creator building a brand or a startup entering the market.</p>
+                    </div>
+                     <div class="marketing-point">
+                        <h3>Collaborative Partnership</h3>
+                        <p>We work alongside you — not just as investors, but as long-term growth partners.</p>
+                    </div>
+                    <div class="marketing-point">
+                        <h3>Sustainable Scaling</h3>
+                        <p>Our approach focuses on building profitable, enduring brands that adapt and thrive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Make IZEAs Section -->
+    <section class="izeas-section">
+        <div class="izeas-content">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <video autoplay muted loop playsinline>
+                        <source src="Videos/mobile.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="izeas-text">
+                <h2>Make <span>Ideas</span> not Ads</h2>
+                <div class="feature-item">
+                    <h4>Social-First, Culturally Relevant Content</h4>
+                    <p>Creators don't just follow trends—they set them. We curate and co-create ideas that resonate in real time.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Made by the New Creative Class</h4>
+                    <p>Creators are shaping the future of brand storytelling. We help brands harness their influence.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Move at the Speed of Culture</h4>
+                    <p>Great marketing doesn't wait. We help brands launch content that's timely, reactive, and designed to go viral.</p>
+                </div>
+                <button class="see-izeas-btn" onclick="openModal()">See Our Work</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section - NO GAPS -->
+    <section class="carousel-section" id="portfolio">
+       
+        <div class="carousel-wrapper">
+            <div class="carousel-track">
+                <!-- Original slides -->
+                <div class="carousel-slide industry-tech">
+                    <div class="industry-badge">TECH</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Tech Innovation</div>
+                        <div class="carousel-username">@techleaders</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-auto">
+                    <div class="industry-badge">AUTO</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Auto Brand</div>
+                        <div class="carousel-username">@drivefuture</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-health">
+                    <div class="industry-badge">HEALTH</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Health & Wellness</div>
+                        <div class="carousel-username">@healthyliving</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-retail">
+                    <div class="industry-badge">RETAIL</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Retail Brand</div>
+                        <div class="carousel-username">@shoppingpro</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-restaurant">
+                    <div class="industry-badge">RESTAURANT</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Food & Dining</div>
+                        <div class="carousel-username">@foodielife</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-education">
+                    <div class="industry-badge">EDUCATION</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">EduTech</div>
+                        <div class="carousel-username">@learnwithme</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-entertainment">
+                    <div class="industry-badge">ENTERTAINMENT</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Entertainment</div>
+                        <div class="carousel-username">@showbiz</div>
+                    </div>
+                </div>
+               
+                <!-- Duplicate for seamless loop -->
+                <div class="carousel-slide industry-tech">
+                    <div class="industry-badge">TECH</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Tech Innovation</div>
+                        <div class="carousel-username">@techleaders</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-auto">
+                    <div class="industry-badge">AUTO</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Auto Brand</div>
+                        <div class="carousel-username">@drivefuture</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-health">
+                    <div class="industry-badge">HEALTH</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Health & Wellness</div>
+                        <div class="carousel-username">@healthyliving</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-retail">
+                    <div class="industry-badge">RETAIL</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Retail Brand</div>
+                        <div class="carousel-username">@shoppingpro</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-restaurant">
+                    <div class="industry-badge">RESTAURANT</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Food & Dining</div>
+                        <div class="carousel-username">@foodielife</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-education">
+                    <div class="industry-badge">EDUCATION</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">EduTech</div>
+                        <div class="carousel-username">@learnwithme</div>
+                    </div>
+                </div>
+                <div class="carousel-slide industry-entertainment">
+                    <div class="industry-badge">ENTERTAINMENT</div>
+                    <div class="carousel-content"></div>
+                    <div class="carousel-info">
+                        <div class="carousel-brand">Entertainment</div>
+                        <div class="carousel-username">@showbiz</div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Believe Section -->
+    <section class="why-section" id="about">
+        <div class="why-content">
+            <p class="why-title">TRUST US ... WE'VE DONE THIS</p>
+            <h2 class="why-heading">WHY BELIEVE IN THE CONVOKE?</h2>
+            <div class="why-stats-container">
+                <div class="why-stat">
+                    <h3>Experience</h3>
+                    <div class="why-stat-list">
+                        • 12+ Years of Industrial Expertise<br>
+                        • Helped Scale 80+ Startups<br>
+                        • Empowered 120+ Influencers<br>
+                        • 8 Industry Portfolios
+                    </div>
+                </div>
+                <div class="why-stat">
+                    <h3>Results</h3>
+                    <div class="why-stat-list">
+                        • End-to-End Support<br>
+                        • Smart Capital Investment<br>
+                        • Data-Driven Decisions<br>
+                        • Sustainable Scaling
+                    </div>
+                </div>
+                <div class="awards-badge">
+                    <div class="awards-badge-content">100+<br>Collaborations</div>
+                </div>
+            </div>
+            <button class="request-proposal-btn" onclick="openModal()">Request a Proposal</button>
+        </div>
+    </section>
+
+    <!-- Platform Partners Section -->
+   <!--  <section class="platform-section">
+        <div class="platform-container">
+            <div class="platform-label">
+                Platform<br>
+                Partnerships
+            </div>
+            <div class="platform-logos">
+                <span class="platform-logo">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+                    </svg>
+                    Google
+                </span>
+                <span class="platform-logo">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                    </svg>
+                    TikTok
+                </span>
+                <span class="platform-logo">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.844.047 1.719.104 2.591.164.756.051 1.516.106 2.282.165.494.038.996.084 1.517.135.634.063 1.237.207 1.738.673.652.605.852 1.426.756 2.336-.097.917-.412 1.756-.728 2.584-.457 1.202-.934 2.446-1.515 3.676-.407.866-.897 1.609-1.577 2.133-.768.591-1.654.816-2.59.816h-2.237c-.687.976-1.719 1.505-2.88 1.505-.979 0-1.864-.366-2.428-.963-.538.328-1.316.481-2.054.481-1.019 0-1.925-.354-2.487-.953-.674-.718-.961-1.745-.863-2.896.089-.977.324-1.915.59-2.846.118-.414.239-.823.359-1.232.204-.693.417-1.417.621-2.14.104-.364.211-.73.317-1.095.218-.76.422-1.518.622-2.275.19-.715.357-1.43.527-2.145.157-.66.316-1.32.477-1.981.095-.39.186-.779.277-1.168.112-.479.229-.96.348-1.44.063-.253.128-.507.194-.761.063-.245.133-.495.207-.745.095-.314.198-.634.31-.96.197-.558.373-1.07.544-1.582.169-.508.338-1.016.508-1.524.175-.524.356-1.05.545-1.576.148-.412.301-.825.456-1.239.11-.293.222-.586.335-.879.073-.19.147-.382.222-.574.134-.348.273-.697.415-1.046.088-.217.177-.433.267-.649.107-.257.216-.513.325-.769.115-.27.234-.54.355-.81.084-.19.168-.38.253-.57.115-.257.234-.514.353-.771.116-.256.234-.512.353-.768.081-.175.163-.35.244-.525.114-.25.232-.5.35-.749.1-.214.202-.428.304-.642.12-.25.24-.5.362-.75.078-.16.158-.32.237-.48.115-.234.233-.469.35-.703.085-.168.172-.336.259-.503.119-.227.238-.455.358-.682.096-.182.192-.364.289-.546.113-.215.228-.43.343-.646.09-.17.181-.341.271-.511.119-.225.239-.45.359-.675.082-.154.164-.308.247-.462.123-.233.246-.466.369-.699.077-.145.155-.29.233-.435.127-.237.255-.474.383-.711.069-.129.139-.258.208-.387.135-.251.271-.502.407-.753.057-.105.115-.21.172-.315.146-.269.294-.538.442-.807.045-.082.091-.164.137-.246.171-.315.344-.63.518-.945.015-.028.031-.055.046-.083.181-.332.365-.664.549-.996l.257-.474c.181-.334.365-.669.549-1.003.027-.05.055-.1.082-.151.185-.338.372-.677.559-1.015.008-.015.016-.03.024-.045.192-.35.387-.699.583-1.049.006-.011.013-.022.019-.033.234-.42.474-.841.716-1.263.143-.25.289-.502.436-.753.257-.441.518-.882.782-1.323.127-.213.256-.426.386-.639.269-.439.541-.877.816-1.314.118-.19.239-.379.36-.569.282-.442.568-.883.856-1.324.103-.158.207-.316.311-.474.305-.461.615-.922.927-1.382.086-.127.174-.254.261-.381.332-.488.669-.975 1.009-1.463.064-.091.129-.182.194-.273.49-.691.986-1.382 1.487-2.072.017-.024.035-.048.052-.072.4-.547.807-1.094 1.218-1.639.577-.768 1.166-1.533 1.765-2.296.031-.039.061-.078.092-.117.641-.818 1.295-1.633 1.96-2.446.016-.02.032-.04.048-.059.678-.828 1.37-1.653 2.073-2.476.018-.021.037-.042.055-.064.704-.823 1.421-1.644 2.149-2.462.025-.028.05-.057.075-.085.716-.806 1.445-1.608 2.186-2.408.028-.03.057-.061.085-.091.755-.816 1.523-1.628 2.302-2.437.017-.018.035-.036.052-.054 1.623-1.684 3.307-3.356 5.04-5.016l.171-.164C19.696-.693 15.132-.867 12.206.793z"/>
+                    </svg>
+                    Snapchat
+                </span>
+                <span class="platform-logo">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    YouTube
+                </span>
+                <span class="platform-logo">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    Meta
+                </span>
+                <span class="platform-logo">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    X
+                </span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="#">Services</a>
+                <a href="#">Industries</a>
+                <a href="#">Our Work</a>
+                <a href="#">Resources</a>
+                <a href="#">Investors</a>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="footer-logo-section">
+                <div class="footer-logo">TC</div>
+            </div>
+            <div></div>
+            <div class="footer-connect">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href=" https://www.linkedin.com/company/74302541/admin/dashboard" class="social-link">in</a>
+                 <!--    <a href="#" class="social-link">▶</a>
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">ig</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 TheConvokee Worldwide, Inc.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+  <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 class="modal-title">Let's Connect</h2>
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+             <div id="formStatus"></div>  
+        </div>
+    </div>                          
+    <script src="script.js"></script>
+</body>
+</html>
